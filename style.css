@@ -1,0 +1,419 @@
+/* HOME */
+body{
+    background-image: url("images/pink-flames.png");
+    margin: 0;
+    height: 100vh;
+    background-size: cover;    
+background-position: center;
+    background-repeat: no-repeat;
+
+}
+/*nav bar */
+.Juturu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    color: azure;
+    background-color: black;
+    border: 2px solid rgb(252, 41, 171);
+    padding:15px 4%;
+   
+    
+
+}
+.Indu{
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px hotpink;
+
+    
+}
+.Hasita {
+    display: flex;
+    gap: clamp(8px, 3vw, 40px);
+    font-size: clamp(14px, 2vw, 20px);
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.Hasita a{
+        color: azure;
+        text-decoration: none;
+        padding:8px 18px;
+        border-radius: 25px;
+        transition: 0.3s;
+        box-shadow: 0 0 15px hotpink;
+
+        
+}
+.Hasita a:hover{
+    color: hotpink;
+       box-shadow: 0 0 15px hotpink;
+  
+}
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 8vh auto 0;
+    text-align: center;
+
+}
+
+/* Group image */
+#group img {
+    width: min(500px, 90vw);
+    height: auto;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 15px hotpink;
+   
+}
+
+#group img:hover {
+    transform: scale(1.02);
+    filter:brightness(1.08);
+    box-shadow: 0 0 20px hotpink;
+}
+
+/* BLACKPINK text */
+.a {
+    margin: 15px 0 0;
+    color: hotpink;
+    font-size: clamp(28px, 5vw, 50px);
+    font-weight: bold;
+    letter-spacing: clamp(3px, 1vw, 8px);
+    text-shadow:
+        0 0 10px hotpink,
+        0 0 25px hotpink;
+}
+
+/* Born To Stand Out */
+.b {
+       margin: 5px 0 0;
+    color: white;
+    font-size: clamp(14px, 2.5vw, 24px);
+    font-weight: bold;
+    letter-spacing: clamp(2px, 0.6vw, 5px);
+    text-transform: uppercase;
+    text-shadow: 0 0 10px hotpink;
+ 
+}
+/* explore button */
+.explore {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+
+    color: white;
+    text-decoration: none;
+
+    border: 2px solid hotpink;
+    border-radius: 30px;
+
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    box-shadow: 0 0 10px hotpink;
+
+    transition: 0.3s;
+}
+
+.explore:hover {
+    background-color: hotpink;
+    color: black;
+
+    box-shadow:
+        0 0 15px hotpink,
+        0 0 30px hotpink;
+
+    transform: scale(1.08);
+}
+   
+
+
+
+/* MEMBERS   */
+body.mem{
+        margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #050005;
+
+
+    
+}
+
+
+.members {
+    margin: 0;
+    height: 100vh;
+    padding: 40px 60px;
+    background: #050005;
+}
+
+/* TOP */
+
+.members-title {
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.crown {
+    font-size: 35px;
+
+    color: #ff69b4;
+
+    text-shadow:
+        0 0 10px #ff69b4,
+        0 0 25px #ff1493;
+}
+
+.members-title h1 {
+    margin-top: 5px;
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    letter-spacing: 5px;
+
+    color: white;
+
+    text-shadow:
+        0 0 10px #ff69b4,
+        0 0 25px #ff1493;
+}
+
+.members-title p {
+    margin-top: 8px;
+
+    font-family: Georgia, serif;
+
+    font-size: 17px;
+
+    letter-spacing: 5px;
+
+    color: #ff8ac5;
+}
+
+
+/* FOUR MEMBERS */
+
+.members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+
+}
+
+
+/* CARD */
+
+.member-card {
+    min-height: 420px;
+    height: clamp(400px, 35vw, 460px);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ff4fa3;
+    background: #100009;
+    box-shadow: 0 0 10px #ff1493;
+    transition: 0.4s ease;
+
+}
+
+
+/* IMAGE */
+
+.member-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+
+/* HOVER */
+
+.member-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 0 20px #ff1493,
+        0 0 40px #ff1493;
+}
+
+.member-card:hover img {
+    transform: scale(1.06);
+}
+
+
+/* DARK GRADIENT AT BOTTOM */
+
+.member-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        transparent 40%,
+        rgba(0, 0, 0, 0.2) 50%,
+        rgba(0, 0, 0, 0.95) 100%
+    );
+}
+
+
+/* MEMBER NAME */
+
+.member-info {
+    position: absolute;
+    z-index: 2;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+}  
+
+.member-info h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #ffb6d9;
+    text-shadow:
+        0 0 10px #ff1493;
+}
+
+.member-info p {
+    margin-top: 8px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+
+
+
+/*  MUSIC   */
+/* ============================= */
+/*       MUSIC PAGE              */
+/* ============================= */
+
+.music-page {
+    margin: 0;
+    background-image: url("images/lightstick.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+
+/* ALBUM CONTAINER */
+
+.music-page .albums {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto 40px;
+
+}
+
+
+/* ALBUM CARD */
+
+.music-page .album-card {
+    text-align: center;
+    color: white;
+}
+
+
+/* ALBUM IMAGE */
+
+.music-page .album-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 15px hotpink;
+
+}
+.music-page .album-card img:hover{
+    transform: scale(1.02);
+    filter:brightness(1.08);
+    box-shadow: 0 0 20px hotpink;
+}
+
+/* ALBUM NAME */
+
+.music-page .album-card h2 {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin: 18px 0 8px;
+}
+
+
+/* YEAR */
+
+.music-page .album-card p {
+    color: #ff69b4;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+/* PLAY BUTTON */
+
+.music-page .play-btn {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #ff69b4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto;
+    color: #ff69b4;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+
+/* PLAY BUTTON HOVER */
+
+.music-page .play-btn:hover {
+    background: #ff69b4;
+    color: black;
+    box-shadow:
+        0 0 15px #ff69b4,
+        0 0 30px #ff1493;
+    transform: scale(1.1);
+}
+
+
+/* ============================= */
+/*       RESPONSIVE DESIGN       */
+/* ============================= */
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
